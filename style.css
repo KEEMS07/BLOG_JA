@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Rouge+Script&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color:rgba(99, 109, 167, 0.678);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+}
+.header-logo{
+    display: inline-block;
+    width: 90%;
+    padding: 10px 30px;
+
+}
+.menu-btn{
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    z-index: 10;
+
+}
+.navbar{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f1ea;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+
+    
+}
+.header-logo a{
+    text-decoration: none;
+    
+    font-family: "Rouge Script", serif;
+    font-weight: 1000;
+    font-style:normal;
+    color: black;
+    font-size: 1.9rem;
+    font-weight: bold;
+    float: right;
+
+}
+.nav{
+    display: inline-block;
+    width: 90%;
+
+}
+.menu-items{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: auto;
+    background-color: wheat;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 300px;
+    padding: 10px 20px;
+    border-radius: 2rem;
+    text-align: center;
+}
+.menu-items a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #005a48;
+    font-weight: bold;
+}
+.menu-items a:hover{
+    color: azure;
+}
+.show-menu{
+    display: block;
+}
+.nav-items{
+    display: inline-block;
+    width: calc(90% -100px);
+    vertical-align: middle;
+    text-align: center;
+}
+.nav-item{
+    display: inline-block;
+    margin: 0px 10px;
+    
+    
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: #005a48;
+    font-weight: 600;
+    font-size: 1.5rem;
+    
+
+}
+
+.nav-logo{
+    display: inline-block;
+    width: 90%;
+    vertical-align: middle;
+    
+
+
+}
+.nav-logo a{
+    background-color:white;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    width: 40%;
+    padding: 10px;
+    border-radius: 20px;
+   display: flexbox;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: hidden;
+    border: none;
+    flex-basis: 40%;
+    outline: none;
+    text-align: center;
+}
+.nav-item a:hover {
+    color: rgba(99, 109, 167, 0.678) ;
+  }
+/*slider*/
+.slider-container{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(IMG-20250222-WA0038.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    cursor: pointer;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+
+
+.glide__container{
+    width: 60%;
+    margin: auto;
+}
+.glide__slide{
+    border-radius: 100%;
+    text-align: center;
+    padding: 20px;
+}
+.glide__slide img{
+    height: 180px;
+    width: 180px;
+    border-radius: 30%;
+    object-fit: cover;
+    border: #ffff solid 6px;
+}
+.glide__slide h4{
+    color: white;
+    font-size: 0.9rem;
+    margin: 10px;
+
+}
+.glide__slide h3{
+    color: white;
+    font-size: 1rem;
+    margin: 10px;
+    font-weight: 600;
+
+}
+.glide__arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.glide__arrow{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.glide__arrow:hover{
+    background-color: white;
+    color: black;
+}
+/*main*/
+.main-title{
+    padding: 0px 20px;
+    color: #005a48;
+    
+
+}
+.main-section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,320px);
+    grid-gap: 20px;
+    width: 98%;
+    margin: auto;
+    padding: 10px 0px;
+    
+
+}
+.articles{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    border-bottom: solid 2px #7d57579b;
+    padding-bottom: 30px;
+
+}
+.article__img{
+    flex-basis: 60%;
+}
+.article__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.article__text{
+    flex-basis: 48%;
+    margin: 6px;
+    width: 100%;
+}
+.article__text h2,.articles-footer-1 h2,.articles-footer-2 h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #005a48;
+
+}
+.article__btn{
+    background-color: #7d57579b;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: white;
+}
+.article__smile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    cursor: pointer;
+}
+.sidebar{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    background-color: #dfcece;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 200px 1fr 200px;
+    
+}
+.sidebar__newletter{
+    padding: 2rem;
+
+}
+.sidebar__newletter--action{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+
+}
+.sidebar__newletter h1{
+    color: #7d57579b;
+    border-bottom: 2px solid #5c5655;
+    display: inline-block;
+
+}
+.sidebar__newletter--action__input{
+    width: 100%;
+    border: none;
+    background-color: #b3a5a5;
+    outline: none;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    border-radius: 20px;
+
+    
+}
+.sidebar__newletter--action__send{
+    background-color: #005a48;
+   color: white;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px 5px;
+    font-size: 1rem;
+}
+.article-footer-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.article__img-footer-1{
+    height: 15cm;
+    width: 15cm;
+
+}
+.article__img-footer-1 img{
+    height: 100%;
+    width: 100%;
+    
+    object-fit: cover;
+
+    
+}
+
+.article-footer-2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.article__img-footer-2{
+    height: 100%;
+    width: 100%;
+
+}
+.article__img-footer-2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+/*recent*/
+.recent{
+    padding: 4rem;
+
+
+}
+.recent h1{
+    color: #5c5655;
+    border-bottom: 2px solid #5c5655;
+    display: inline-block;
+    margin-top: 3rem;
+
+}
+.recent__items{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.recent__items h4{
+    margin: 20px 70px;
+}
+.recent__item{
+    list-style: none;
+
+}
+.recent__item img{
+    height: auto;
+    width: 100px;
+    border-radius: 100px;
+}
+.sidebar-social-media{
+    background-color: #005a48;
+    
+
+}
+.sidebar-social-media__content{
+    padding: 1rem 3rem;
+    ;
+
+}
+.sidebar-social-media__content h3{
+    color: #ffff;
+    font-size: 1.5rem;
+    border-bottom: #ffff solid 2px;
+    display: inline-block;
+
+}
+.sidebar-social-media__content-icon{
+    display: flex;
+}
+.sidebar-social-media__content-icon i{
+    font-size: 2rem;
+    margin-right: 30px;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    padding: 20px;
+    border-radius: 100%;
+    animation: 3s;
+
+}
+.sidebar-social-media__content-icon i.glide__arrow:hover{
+    background-color: #f1f1f1;
+    
+}
+.sidebar__newletter{
+    text-decoration: none;
+    
+    font-family: "Rouge Script", serif;
+    font-weight: 1000;
+    font-style:normal;
+    font-size: 2rem;
+
+}
+.sidebar__newletter--action__send{
+    font-size: 1.5rem;
+    padding: auto;
+    justify-content: center;
+}
+.article__text{
+    text-align: justify;
+    font-size: 13px;
+}
+.articles-footer-1{
+    text-align: justify;
+
+}
+.article-footer-2 .article__img__footer-2 img{
+    width: 15rem;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.articles-footer-1 .article__text-footer-1 img{
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.recent h1{
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: "Rouge Script", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
